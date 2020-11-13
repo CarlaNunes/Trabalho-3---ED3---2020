@@ -1,3 +1,9 @@
+/*
+Trabalho 1 da disciplina EStrutura de Dados 3
+Autoria: Carla Nunes
+NºUSP: 8479343
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
