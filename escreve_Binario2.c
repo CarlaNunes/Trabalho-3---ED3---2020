@@ -16,6 +16,8 @@ void escreve_Binario2(FILE *arquivo, int cont,char nomeArquivoBinario[20]){
      fwrite(&lixo, sizeof(char) ,1, arquivo);
 
     for(int i = 0; i<cont; i++){
+      //A parte de complementamndo com lixos não deu certo.
+      
       //Completando as strings com lixo
       /*
       if(strlen(pessoa[i].pessoa)<40){
