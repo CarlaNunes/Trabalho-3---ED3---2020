@@ -31,21 +31,28 @@ int main() {
     scanf("%d",&alternativa);
     //printf("Valor da alternativa: %d",alternativa);
     scanf("%s",nomeArquivoCsv);
-    scanf("%s",nomeArquivoBinario);
-    scanf("%s",nomeArquivoIndice);
-
+    retorno = retirar_ponto(nomeArquivoCsv);
+   
+    if(retorno != 0){
+       scanf("%s",nomeArquivoBinario);
+       scanf("%s",nomeArquivoIndice);
+    }
+   
     cont = le_arquivo(arquivo,nomeArquivoCsv); //Número de pessoas lidas
    // printf("pessoas lidas: %d\n",cont);
     lidando_idade_negativas(arquivo,cont);
     escreve_Binario2(arquivo,cont,nomeArquivoBinario);
    // le_index(arquivo,cont);
-    //Criando preenchendo a struct de indice primário
+   //No for abaixo, será o preenchimento da struct referente ao arquivo de indice primário.
+   //Optou-se, por struct ao invés de listas encadeadas. Pois, o autor do código não lida muito bem com ponteiro.
     for(i = 0; i < cont; i++){ 
       index_p[i].idPessoa = pessoa[i].idPessoa;
       index_p[i].rrn = i;
     }
     
   //Função nativa do C, para ordenar os indices
+   //A função abaixo, é nativa do C. Ela aplica o algoritmo de ordenaçãop qsort, juntamente com a função 'comp' que ordena de modo decrescente os elementos lidos
+   //O uso, foi recomendado por um colega de curso que já se formou.
    qsort(index_p,cont,sizeof(struct index_p),comp);
    //Criando o arquivo de indice primário depois da ordenação  
    insereIndex(arquivo,cont,nomeArquivoIndice);
@@ -222,8 +229,6 @@ int main() {
       insereIndex(arquivo,cont,nomeArquivoIndice);
       //le_index(arquivo,cont,nomeArquivoIndice);
       binarioNaTela1(nomeArquivoBinario,nomeArquivoIndice);
- 
-     
    }
   
    
