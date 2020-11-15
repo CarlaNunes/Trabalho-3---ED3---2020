@@ -1,3 +1,6 @@
+/*
+Irá ordenar de modo decrescente os id's para o uso posterior da função qsort.
+*/
 int comp(const void *p, const void *q) {
   struct index_p *a = (struct index_p*)p;
   struct index_p *b = (struct index_p*)q;
