@@ -1,5 +1,7 @@
+/*Irá criar o arquivo de indice primário
+*/
 void insereIndex(FILE *arquivo,int cont,char nomeArquivoIndice[20]) {
- char status = '0'; //Arquivo de dados consistente. Ao finalizar terá valor igual a -1.
+ char status = '0'; //Arquivo de dados consistente. Ao finalizar terá valor igual a 1.
   char lixo[] = "$$$$$$$";
   char linha[400];
   int id = 0;
