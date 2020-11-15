@@ -1,4 +1,7 @@
 
+/*
+Irá lê o arquivo de indice, para testar se está como esperado.
+*/
 void le_index(FILE *arquivo, int cont,char *nomeArquivoIndice){
     char status;
     char lixo[7]; 
@@ -19,7 +22,7 @@ void le_index(FILE *arquivo, int cont,char *nomeArquivoIndice){
       //Testando a leitura:
       for(i = 0; i < cont;i++ ){
         
-      printf("\n ID: %d e RRN: %d\n",index_p[i].idPessoa,index_p[i].rrn);
+      //printf("\n ID: %d e RRN: %d\n",index_p[i].idPessoa,index_p[i].rrn);
      // printf("\n RRN: %d \n",index_p[i].rrn);
       }
       
@@ -27,4 +30,4 @@ void le_index(FILE *arquivo, int cont,char *nomeArquivoIndice){
     }
     fclose(arquivo);
   }  
-/
+
