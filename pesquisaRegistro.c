@@ -1,3 +1,7 @@
+/*
+JUntamente com a busca binária, irá retornar o registro se a pesquisa for realizada com o id.
+*/
+
 void pesquisaRegistro(FILE *arquivo,int rrn,int cont,int id,char nomeArquivoBinario[20]){
     //Pessoa pessoa;
 
