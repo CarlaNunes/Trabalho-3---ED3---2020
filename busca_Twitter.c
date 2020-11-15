@@ -1,3 +1,10 @@
+/*
+Busca simples por twitter. 
+Quando acha o twitter solicitado, retorna os dados restantes.
+A função strncmp, é parecida com a strcmp, porém, o terceiro parãmetro é a quantidade de caracteres que serão reconhecidos da string.
+Por algum morivo, o uso da strcmp por mim, não cumpriu os objetivos propostos. Só na linha 31 o strcm,p foi útil.
+*/
+
 void busca_Twitter(FILE *arquivo,char twitter[15],int cont,char nomeArquivoBinario[20]){
   char status;
   int quantidadePessoas = cont;
