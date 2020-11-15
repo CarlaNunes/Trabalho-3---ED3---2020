@@ -1,5 +1,8 @@
 
 //-------------Funcionalidade 2--------------------------------------
+/*
+Irá ler, o arquivo gerado pela extração dos dados do arquivo. csv e irá ler e exibir todos os registros.
+*/
 void exibir_campos(FILE *arquivo, int cont, char nomeArquivoBinario[20]){
   char status;
   char lixo2[] = "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$";
