@@ -1,3 +1,8 @@
+/*
+Busca simples por idade. Se achar algo diferente de um número positivo retorno '-'.
+Quando acha a idade solicitada, retorna os dados restantes.
+*/
+
 int busca_Idade(FILE * arquivo,int idade, int cont,char nomeArquivoBinario[20]){
   char status;
   int quantidadePessoas = cont;
@@ -10,9 +15,9 @@ int busca_Idade(FILE * arquivo,int idade, int cont,char nomeArquivoBinario[20]){
     }
 
     else{
-       fread(&status, sizeof(char) ,1 ,arquivo);
-       fread(&quantidadePessoas,sizeof(int),1 ,arquivo);      
-       fread(lixo,sizeof(char),1 ,arquivo);
+       fread(&status, sizeof(char) ,1 ,arquivo);//Lê o status do cabeçalho do arquivo
+       fread(&quantidadePessoas,sizeof(int),1 ,arquivo); // Lê o quantidade de pessoas do cabeçalho do arquivo    
+       fread(lixo,sizeof(char),1 ,arquivo);// Lê lixo do cabeçalho do arquivo
         for(i = 0; i < cont;i++ ){
            fread(&pessoa,sizeof(Pessoa),1,arquivo);
         }
