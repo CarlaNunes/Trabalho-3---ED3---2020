@@ -1,3 +1,7 @@
+/*
+Nos teste do run codes, foi notado que pode ser inserido um nome de arquivo, sem a extensão csv.
+A função pega a parte final do nome inserido, correspondente a extensão dso aqruivo e verifica se é csv. Em caso positivo retorna 1 caso contrário retorna 0.
+*/
 
 int retirar_ponto(char nomeArquivoCsv[20]){
    int i = 0;
@@ -12,9 +16,5 @@ int retirar_ponto(char nomeArquivoCsv[20]){
           else{
             return 0;
          }
-         
    
-
-                  
-
  }
