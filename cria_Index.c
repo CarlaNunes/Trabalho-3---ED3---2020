@@ -1,3 +1,6 @@
+/*
+Cria o arquivo de índice primário.
+*/
 void cria_Index(FILE *arquivo,int cont,char nomeArquivoIndice[20]){
  
   char status = '0'; //Arquivo de dados consistente. Ao finalizar terá valor igual a -1.
@@ -25,22 +28,6 @@ void cria_Index(FILE *arquivo,int cont,char nomeArquivoIndice[20]){
       for(i = 0; i < cont; i++){
          fwrite(&pessoa,1, sizeof(Pessoa),arquivo);
       }
-     // printf("##### INSERINDO NO INDEX #####\n");
-      //printf("ID: %d\n", auxIndex.numIUSP);
-      //printf("RRN: %d\n", auxIndex.rrn);
-    //auxIndex.rrn++;
-      //printf("############################\n");
-
-   
-    //fwrite (&auxIndex, sizeof(indice), 1, df2);
-
- 
-     // }
-    //auxIndex.tam = (auxrrn-1)*72;
-      
-   
- 
-
       
       
   }
