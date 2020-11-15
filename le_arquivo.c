@@ -1,3 +1,7 @@
+/*
+Irá ler o arquivo .csv e com isso, palicar os trtok e extrair os dados e coloca-los na struct correspondente.
+*/
+
 int le_arquivo(FILE *arquivo,char nomeArquivoCsv[20]){
     int i = 0;
 
