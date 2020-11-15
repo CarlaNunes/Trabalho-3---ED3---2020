@@ -1,5 +1,5 @@
 all:
-    gcc -o Trabalho-1-ED3-2020 *.c
+    gcc -o trab1 *.c
     
 run: 
-    ./Trabalho-1-ED3-2020 
+    ./trab1
