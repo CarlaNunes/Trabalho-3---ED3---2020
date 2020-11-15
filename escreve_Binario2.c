@@ -37,7 +37,8 @@ void escreve_Binario2(FILE *arquivo, int cont,char nomeArquivoBinario[20]){
       */
       //else{
             int tam = 0, tam2 = 0;
-            fwrite(&removido,1,sizeof(char),arquivo);
+            pessoa[i].removido = '1';
+            fwrite(&pessoa[i].removido,1,sizeof(char),arquivo);
             int id = pessoa[i].idPessoa;
             fwrite(&id,1,sizeof(int),arquivo);
 
