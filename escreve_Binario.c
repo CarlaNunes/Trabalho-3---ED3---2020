@@ -2,31 +2,6 @@
 Irá gerar o arquivo com dados depois, da extração das infromações do arquivo .csv.
 Nessa versão irá escrever registro a registro. A sus segunda versão irá escrever campo a campo.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 */
 
 void escreve_Binario(FILE *arquivo, int cont,char nomeArquivoBinario[20]){
