@@ -1,10 +1,6 @@
 //************Funcionalidade 5******************
 /*
-Não esquecer, que ao final da funcionalidade :
-1)Escrever tudo em arquivo;
-2)Ordenar;
-3)Escrever no index;
-4)BinarioNa Tela
+Nessa, iremos atualizar os dados desejadfos no arquivo de dados. Do mesmo modo que a função 'atualiza_index.
 */
 void atualizacao_reg(int cont, int numAtu ){
   int i = 0;
