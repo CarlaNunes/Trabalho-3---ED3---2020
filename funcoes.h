@@ -48,3 +48,4 @@ void inseri_Arquivo(FILE *arquivo, int numInseri,int cont, char nomeArquivoBinar
 void inseri_Index(FILE *arquivo,int numInseri,int cont,char nomeArquivoBinario[20]);
 void atualizacao_reg(int con, int numAtu );
 void atualizacao_index(int con, int numAtu );
+int retirar_ponto(char nomeArquivoCsv[20]);
