@@ -1,3 +1,8 @@
+/*
+Versão final da busca pelo nome.
+Irá retornar as informações do nome pesquisado.
+*/
+
 void procura_Nome(FILE * arquivo, int cont, char nome2[40],char nomeArquivoBinario[20]) {
  char status;
   int quantidadePessoas = cont;
