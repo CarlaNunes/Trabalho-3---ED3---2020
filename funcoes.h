@@ -3,7 +3,7 @@ Contém, todas as funbções utilizadas no trabalho.
 Foi fornecido outro .h com as funções fornecidas. foi tomada a decisão de criar só um .h.
 */
 typedef struct pessoa{
-    char removido; //Verificar esse valor depois, na revisão
+    char removido = '1'; //Verificar esse valor depois, na revisão
     int idPessoa;
     char pessoa[40];
     int idade;
