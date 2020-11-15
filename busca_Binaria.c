@@ -1,10 +1,13 @@
 //------Início pesquisa por ID, usando o index e o arquivo de dados
+/*
+A função, ira realizar a busca binária nos dados do indice primário e retornaro seu rrn para que assim, se busque o registro no arquivo de dados.
+A fonte do código original se encontra no seguinte site: https://blog.pantuza.com/artigos/busca-binaria
+
+*/
 
 
 
-  //Usar se PRECISAR
-  //Fonte da versão original: https://blog.pantuza.com/artigos/busca-binaria
-  //Função ok
+
 int busca_Binaria(Index_p index_p[2000], int cont, int id)
 {
    int direita, esquerda, meio, encontrado = 0,i = 0;
