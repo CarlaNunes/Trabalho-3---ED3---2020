@@ -1,3 +1,10 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include<ctype.h>
+#include "funcoes.h"
+
+
 /*
 Nos teste do run codes, foi notado que pode ser inserido um nome de arquivo, sem a extensão csv.
 A função pega a parte final do nome inserido, correspondente a extensão dso aqruivo e verifica se é csv. Em caso positivo retorna 1 caso contrário retorna 0.
