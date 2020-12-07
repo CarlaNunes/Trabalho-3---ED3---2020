@@ -3,7 +3,7 @@ Contém, todas as funbções utilizadas no trabalho.
 Foi fornecido outro .h com as funções fornecidas. foi tomada a decisão de criar só um .h.
 */
 typedef struct pessoa{
-    char removido = '1'; //Verificar esse valor depois, na revisão
+    char removido; //Verificar esse valor depois, na revisão
     int idPessoa;
     char pessoa[40];
     int idade;
@@ -60,3 +60,14 @@ void inseri_Index(FILE *arquivo,int numInseri,int cont,char nomeArquivoBinario[2
 void atualizacao_reg(int con, int numAtu );
 void atualizacao_index(int con, int numAtu );
 int retirar_ponto(char nomeArquivoCsv[20]);
+/*****Funções Trab 2***/
+void escreve_Binario2(FILE *arquivo, int cont,char nomeArquivoBinario[20]);
+int comp2(const void *p, const void *q);
+void atualizar_status(FILE *arquivo,int cont,char nomeArquivoBinario[20]);
+void binarioNaTela2(char *nomeArquivoBinario);
+void exibir_campos(FILE *arquivo, int cont, char nomeArquivoBinario[20]);
+void escreve_Ordenado(FILE *arquivo, int cont,char nomeArquivoBinario[20], char nomeArquivoOrdenado[20]);
+void binarioNaTela1(char nomeArquivoBinario[20], char nomeArquivoIndice[20]);
+void exibir_campos2(FILE *arquivo, int cont, char nomeArquivoOrdenado[20]);
+int comp(const void *p, const void *q);
+
