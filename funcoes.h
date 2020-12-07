@@ -16,7 +16,14 @@ typedef struct index_p  {
   int rrn;
 }Index_p;
 
-
+ typedef struct dados{
+    char removido; 
+    int idPessoaQueSegue; 
+    int idPessoaQueESeguida;
+    char grauAmizade[3]; 
+    char dataInicioQueSegue[11];
+    char dataFimQueSegue[11];
+}Dados;
 
 Pessoa pessoa[2000];
 Pessoa pessoa_aux[200];//Para a funcionalidade 4
